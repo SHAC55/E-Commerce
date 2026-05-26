@@ -10,7 +10,7 @@ import orderRouter from './routes/orderRouter.js';
 
 // APP CONFIG
 const app = express();
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 5000
 connectMongodb()
 connectCloudinary()
 

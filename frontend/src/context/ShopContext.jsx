@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import { useNavigate } from 'react-router-dom';
 
 
-export const ShopContext = createContext()
+export const ShopContext = createContext    
 
 const ShopContextProvider = (props) => {
 
@@ -136,12 +136,12 @@ const ShopContextProvider = (props) => {
         getProductData()
     },[])
     
-    useEffect(()=>{
-        if(!token && localStorage.getItem('token')){
-            setToken(localStorage.getItem('token')) ;
-            getUserCart(localStorage.getItem('token')) ;
-        }
-    },[])
+            useEffect(()=>{
+                if(!token && localStorage.getItem('token')){
+                    setToken(localStorage.getItem('token')) ;
+                    getUserCart(localStorage.getItem('token')) ;
+                }
+            },[])
     
 
     const value = {
